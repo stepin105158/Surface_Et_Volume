@@ -29,8 +29,13 @@ void cone(){
     scanf("%f", &radius);
     printf("\nEnter height of Cone\n\n");
     scanf("%f", &height);
+    printf("Enter the slant height \n\n");
+	scanf("%f", &l);
+	if(l < radius){
+			printError("Radius cannot be greater than the slant height! Please try again\n\n");
+			continue;
+				}
     volume = (3.14159265359*radius*radius*height)/3;
-    l = sqrt(height*height+radius*radius);
     area = 3.14159265359*radius*l+3.14159265359*radius*radius;
     printf("\n\nArea of Cone: %f\nVolume of Cone: %f\n\n\n\n" ,area, volume);
 }
