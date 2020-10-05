@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <memory.h>
 #include "SurfaceEtVolume.h"
-#include "test_surfaceetvolume.h"
 
 int main(){
     int n;
