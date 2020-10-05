@@ -1,7 +1,7 @@
+# Name of the project
+PROJECT_NAME = Surface_Et_Volume
 
-PROJECT_NAME = surface_et_volume
-
-
+# Output directory
 BUILD = build
 
 # All source code files
@@ -32,7 +32,6 @@ all: $(SRC) $(BUILD)
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
 
-
 # Build and run the unit tests
 test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
@@ -41,7 +40,6 @@ test:$(BUILD)
 # Remove all the built files, invoke by `make clean`
 clean:
 	rm -rf $(BUILD)
-
 # Create new build folder if not present
 $(BUILD):
 	mkdir build
