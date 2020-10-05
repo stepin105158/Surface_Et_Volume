@@ -16,7 +16,7 @@ void mainmenu(){
 
 void sphere(){
     float volume, area, radius;
-    printf("Enter radius to calculate volume and surface area of the sphere:\n\n");
+    printf("Enter radius to calculate volume and surface area of the sphere: ");
     scanf("%f", &radius);
     volume = (4*3.14159265359*radius*radius*radius)/3;
     area = 4*3.14159265359*radius*radius;
@@ -24,27 +24,23 @@ void sphere(){
 }
 
 void cone(){
-    printf("Enter radius to calculate the volume and area of the cone:\n\n");
     float volume, radius, area, height, l;
+    printf("Enter radius to calculate the volume and area of the cone: ");
     scanf("%f", &radius);
-    printf("\nEnter height of Cone\n\n");
+    printf("\nEnter height of Cone ");
     scanf("%f", &height);
-    printf("Enter the slant height \n\n");
-	scanf("%f", &l);
-	if(l < radius){
-			printError("Radius cannot be greater than the slant height! Please try again\n\n");
-			continue;
-				}
+    printf("\nEnter the slant height ");
+    scanf("%f", &l);
     volume = (3.14159265359*radius*radius*height)/3;
     area = 3.14159265359*radius*l+3.14159265359*radius*radius;
     printf("\n\nArea of Cone: %f\nVolume of Cone: %f\n\n\n\n" ,area, volume);
 }
 
 void cylinder(){
-    printf("Enter radius of the cylinder:\n\n");
     float radius, volume, area, height;
+    printf("Enter radius of the cylinder: ");
     scanf("%f" ,&radius);
-    printf("\nEnter height of cylinder\n\n");
+    printf("\nEnter height of cylinder ");
     scanf("%f" ,&height);
     volume = 3.14159265359*radius*radius*height;
     area = 2*3.14159265359*radius*height+2*3.14159265359*radius*radius;
@@ -52,8 +48,8 @@ void cylinder(){
 }
 
 void cube(){
-    printf("Enter edge of the cube:\n\n");
     float edge,volume,area;
+    printf("Enter edge of the cube: ");
     scanf("%f", &edge);
     volume = edge*edge*edge;
     area = 6*edge*edge;
@@ -61,7 +57,7 @@ void cube(){
 }
 
 void circle(){
-    printf("Enter radius of circle:\n\n");
+    printf("Enter radius of circle: ");
     float radius,area;
     scanf("%f", &radius);
     area = 3.14159265359*radius*radius;
@@ -69,7 +65,7 @@ void circle(){
 }
 
 void square(){
-    printf("Enter side of square:\n\n");
+    printf("Enter side of square: ");
     float side,area;
     scanf("%f", &side);
     area = side*side;
@@ -77,20 +73,20 @@ void square(){
 }
 
 void rectangle(){
-    printf("Enter the length of rectangle:\n\n");
+    printf("Enter the length of rectangle: ");
     float length,width,area;
     scanf("%f", &length);
-    printf("Enter the width of rectangle:\n\n");
+    printf("\nEnter the width of rectangle:\n\n");
     scanf("%f", &width);
     area = length*width;
     printf("\n\nArea of Rectangle: %f\n\n\n\n", area);
 }
 
 void triangle(){
-    printf("Enter the base of triangle:\n\n");
+    printf("Enter the base of triangle: ");
     float base,height,area;
     scanf("%f", &base);
-    printf("Enter the height of rectangle:\n\n");
+    printf("\nEnter the height of rectangle: ");
     scanf("%f", &height);
     area = (base*height)/2;
     printf("\n\nArea of Triangle: %f\n\n\n\n", area);
