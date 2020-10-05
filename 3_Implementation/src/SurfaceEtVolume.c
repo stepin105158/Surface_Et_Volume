@@ -27,9 +27,9 @@ void cone(){
     float volume, radius, area, height, l;
     printf("Enter radius to calculate the volume and area of the cone: ");
     scanf("%f", &radius);
-    printf("\nEnter height of Cone ");
+    printf("\nEnter height of Cone: ");
     scanf("%f", &height);
-    printf("\nEnter the slant height ");
+    printf("\nEnter the slant height: ");
     scanf("%f", &l);
     volume = (3.14159265359*radius*radius*height)/3;
     area = 3.14159265359*radius*l+3.14159265359*radius*radius;
@@ -40,7 +40,7 @@ void cylinder(){
     float radius, volume, area, height;
     printf("Enter radius of the cylinder: ");
     scanf("%f" ,&radius);
-    printf("\nEnter height of cylinder ");
+    printf("\nEnter height of cylinder: ");
     scanf("%f" ,&height);
     volume = 3.14159265359*radius*radius*height;
     area = 2*3.14159265359*radius*height+2*3.14159265359*radius*radius;
@@ -76,7 +76,7 @@ void rectangle(){
     printf("Enter the length of rectangle: ");
     float length,width,area;
     scanf("%f", &length);
-    printf("\nEnter the width of rectangle:\n\n");
+    printf("\nEnter the width of rectangle: ");
     scanf("%f", &width);
     area = length*width;
     printf("\n\nArea of Rectangle: %f\n\n\n\n", area);
@@ -86,7 +86,7 @@ void triangle(){
     printf("Enter the base of triangle: ");
     float base,height,area;
     scanf("%f", &base);
-    printf("\nEnter the height of rectangle: ");
+    printf("\nEnter the height of triangle: ");
     scanf("%f", &height);
     area = (base*height)/2;
     printf("\n\nArea of Triangle: %f\n\n\n\n", area);
