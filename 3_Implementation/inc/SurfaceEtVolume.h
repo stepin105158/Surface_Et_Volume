@@ -1,5 +1,8 @@
 #ifndef SURFACEETVOLUME_H_INCLUDED
 #define SURFACEETVOLUME_H_INCLUDED
+#include <stdio.h>
+#include <stdlib.h>
+#include <memory.h>
 
 void mainmenu();
 void sphere();
