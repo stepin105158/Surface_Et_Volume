@@ -11,13 +11,13 @@ int main()
         printf("\t\t\t3D SHAPES\n\n");
         printf("\t\t\t  1. Sphere\n");
         printf("\t\t\t  2. Cone\n");
-        printf("\t\t\t  3. Cylinder\n");
+     /*   printf("\t\t\t  3. Cylinder\n");
         printf("\t\t\t  4. Cube\n\n");
         printf("\t\t\t2D SHAPES\n\n");
         printf("\t\t\t  5. Circle\n");
         printf("\t\t\t  6. Square\n");
         printf("\t\t\t  7. Rectangle\n");
-        printf("\t\t\t  8. Triangle\n\n");
+        printf("\t\t\t  8. Triangle\n\n");*/
         printf("\t\t\tEnter your option\t");
         scanf("%d",&n);
         system("CLS");
